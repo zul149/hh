@@ -1,0 +1,89 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    android:paddingTop="45dp"
+    android:paddingBottom="30dp"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp"
+        >
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/avatar"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="16dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Резюме для отклика"
+                android:fontFamily="@font/fonts"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UI/UX дизайнер"
+                android:fontFamily="@font/fonts"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/addCoverLetterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:fontFamily="@font/fonts"
+        android:textColor="@color/colorButton"
+        android:textSize="16sp"
+        android:text="Добавить сопроводительное" />
+
+    <EditText
+        android:id="@+id/coverLetterInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите сопроводительное письмо"
+        android:fontFamily="@font/fonts"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"
+        android:backgroundTint="@color/ET"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:id="@+id/finalRespondButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorButton"
+        android:fontFamily="@font/fonts"
+        android:text="Откликнуться"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp" />
+</LinearLayout>

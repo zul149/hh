@@ -1,0 +1,39 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:layout_height="140dp"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_container_background"
+    android:padding="16dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginEnd="8dp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/avatar"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Поднять резюме в поиске"
+        android:fontFamily="@font/fonts"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorButton"
+        android:text="Поднять"
+        android:fontFamily="@font/fonts"
+        android:visibility="gone"
+    android:textSize="12sp"/>
+</LinearLayout>

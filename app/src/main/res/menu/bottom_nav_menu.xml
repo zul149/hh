@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/bottom_navigation_group">
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/search"
+        android:title="Поиск" />
+    <item
+        android:id="@+id/navigation_favorite"
+        android:icon="@drawable/favorite"
+        android:title="Избранное" />
+    <item
+        android:id="@+id/navigation_feedback"
+        android:icon="@drawable/feedback"
+        android:title="Отклики" />
+    <item
+        android:id="@+id/navigation_messages"
+        android:icon="@drawable/messages"
+        android:title="Сообщения" />
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/profile"
+        android:title="Профиль" />
+    </group>
+</menu>

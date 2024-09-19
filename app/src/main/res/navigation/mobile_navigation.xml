@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_search">
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.tzhh.presentation.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_vacancyDetailFragment"
+            app:destination="@id/vacancyDetailFragment">
+            <argument
+                android:name="vacancyId"
+                app:argType="string" />
+            <argument
+                android:name="isFavorite"
+                app:argType="boolean" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/vacancyDetailFragment"
+        android:name="com.example.tzhh.ui.detail.VacancyDetailFragment">
+        <argument
+            android:name="vacancyId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_favorite"
+        android:name="com.example.tzhh.ui.favorite.FavoriteFragment"
+        android:label="@string/title_favorite"
+        tools:layout="@layout/fragment_favorite">
+    <action
+        android:id="@+id/action_searchFragment_to_vacancyDetailFragment"
+        app:destination="@id/vacancyDetailFragment">
+        <argument
+            android:name="vacancyId"
+            app:argType="string" />
+    </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_feedback"
+        android:name="com.example.tzhh.ui.feedback.FeedbackFragment"
+        android:label="@string/title_feedback"
+        tools:layout="@layout/fragment_feedback" />
+
+    <fragment
+        android:id="@+id/navigation_messages"
+        android:name="com.example.tzhh.ui.messages.MessagesFragment"
+        android:label="@string/title_messages"
+        tools:layout="@layout/fragment_messages" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.tzhh.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>
